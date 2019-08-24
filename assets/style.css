@@ -1,0 +1,129 @@
+body {
+    background: #77A1D3;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(85deg, #E684AE, #79CBCA, #77A1D3);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(85deg, #E684AE, #79CBCA, #77A1D3);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+/* Fonts */
+
+h1 {
+    font-family: 'Bungee Inline', sans-serif;
+    font-size: 3em;
+    color: white;
+    -webkit-animation: glowText 5s ease-in-out infinite;
+    -moz-animation: glowText 5s ease-in-out infinite;
+    animation: glowText 5s ease-in-out infinite;
+}
+
+h2 {
+    font-family: 'Bungee Inline', sans-serif;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    color: white;
+}
+
+h3 {
+    font-family: 'Bungee Inline', sans-serif;
+    font-size: 4em;
+    text-transform: uppercase;
+    color: white;
+}
+
+h1 span.sub {
+    font-size: .5em !important;
+}
+
+p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2em;
+    color: white;
+}
+
+.bg-trippy1 {
+    background-color: rgba(26, 26, 26, 0.1);
+    border-radius: 10px;
+    height: 150px;
+    transition: 1.2s;
+    -webkit-animation: glowBG 5s ease-in-out infinite;
+    -moz-animation: glowBG 5s ease-in-out infinite;
+    animation: glowBG 5s ease-in-out infinite;
+}
+
+.bg-trippy2 {
+    background-color: rgba(26, 26, 26, 0.1);
+    border-radius: 10px;
+    height: 75px;
+    transition: 1.2s;
+    -webkit-animation: glowBG 5s ease-in-out infinite;
+    -moz-animation: glowBG 5s ease-in-out infinite;
+    animation: glowBG 5s ease-in-out infinite;
+}
+
+.bg-trippy1:hover {
+    transform: scale(1.1);
+}
+
+@keyframes glowText {
+    0% {
+        text-shadow: 0 0 2px #42f5ce;
+    }
+    25% {
+        text-shadow: 0 0 4px #7df4fa;
+    }
+    50% {
+        text-shadow: 0 0 8px #7d8cfa;
+    }
+    75% {
+        text-shadow: 0 0 4px #bb7dfa;
+    }
+    100% {
+        text-shadow: 0 0 2px #42f5ce;
+    }
+}
+
+@keyframes glowBG {
+    0% {
+        box-shadow: 0 0 10px #42f5ce;
+        opacity: .8;
+    }
+    25% {
+        box-shadow: 0 0 15px #7df4fa;
+        opacity: .8;
+    }
+    50% {
+        box-shadow: 0 0 20px #7d8cfa;
+        opacity: .8;
+    }
+    75% {
+        box-shadow: 0 0 15px #bb7dfa;
+        opacity: .8;
+    }
+    100% {
+        box-shadow: 0 0 10px #42f5ce;
+        opacity: .8;
+    }
+}
+
+
+/*  Main, Section */
+
+main section {
+    height: 88vh;
+    border-radius: 10px;
+    -webkit-animation: glowBG 5s ease-in-out infinite;
+    -moz-animation: glowBG 5s ease-in-out infinite;
+    animation: glowBG 5s ease-in-out infinite;
+    background-color: rgba(26, 26, 26, 0.1);
+}
+
+img.gems {
+    transition: 1.5s;
+}
+
+img.gems:hover {
+    transform: scale(1.3);
+}
